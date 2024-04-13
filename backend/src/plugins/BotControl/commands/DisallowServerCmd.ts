@@ -22,12 +22,12 @@ export const DisallowServerCmd = botControlCmd({
       return;
     }
 
-    await pluginData.state.allowedGuilds.remove(args.guildId);
-    await pluginData.client.guilds.cache
+   await pluginData.state.allowedGuilds.remove(args.guildId);
+   // await pluginData.client.guilds.cache
       // uncomment here to make the bot leave if an server is disallow
       // .get(args.guildId as Snowflake)
       //    ?.leave()
-      .catch(noop);
+   //   .catch(noop);
     sendSuccessMessage(pluginData, msg.channel, "Server removed!");
   },
 });
