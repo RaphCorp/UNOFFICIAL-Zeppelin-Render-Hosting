@@ -1,0 +1,92 @@
+{
+  "MEMBER_NOTE": "{timestamp} 🖊 Note added on {userMention(user)} by {userMention(mod)}",
+  "MEMBER_WARN": "{timestamp} ⚠️ {userMention(member)} was warned by {userMention(mod)}",
+  "MEMBER_MUTE": "{timestamp} 🔇 {userMention(user)} was muted indefinitely by {userMention(mod)}",
+  "MEMBER_TIMED_MUTE": "{timestamp} 🔇 {userMention(user)} was muted for **{time}** by {userMention(mod)}",
+  "MEMBER_UNMUTE": "{timestamp} 🔊 {userMention(user)} was unmuted by {userMention(mod)}",
+  "MEMBER_TIMED_UNMUTE": "{timestamp} 🔊 {userMention(user)} was scheduled to be unmuted in **{time}** by {userMention(mod)}",
+  "MEMBER_MUTE_EXPIRED": "{timestamp} 🔊 {userMention(member)}'s mute expired",
+  "MEMBER_KICK": "{timestamp} 👢 {userMention(user)} was kicked by {userMention(mod)}",
+  "MEMBER_BAN": "{timestamp} 🔨 {userMention(user)} was banned by {userMention(mod)}",
+  "MEMBER_UNBAN": "{timestamp} 🔓 User (`{userId}`) was unbanned by {userMention(mod)}",
+  "MEMBER_FORCEBAN": "{timestamp} 🔨 User (`{userId}`) was forcebanned by {userMention(mod)}",
+  "MEMBER_SOFTBAN": "{timestamp} 🔨 {userMention(member)} was softbanned by {userMention(mod)}",
+  "MEMBER_JOIN": "{timestamp} 📥 {new} {userMention(member)} joined (created <t:{account_age_ts}:R>)",
+  "MEMBER_LEAVE": "{timestamp} 📤 {userMention(member)} left the server",
+  "MEMBER_ROLE_ADD": "{timestamp} 🔑 {userMention(mod)} added roles for {userMention(member)}: **{roles}**",
+  "MEMBER_ROLE_REMOVE": "{timestamp} 🔑 {userMention(mod)} removed roles from {userMention(member)}: **{roles}**",
+  "MEMBER_ROLE_CHANGES": "{timestamp} 🔑 {userMention(member)} had role changes: received **{addedRoles}**, lost **{removedRoles}**",
+  "MEMBER_NICK_CHANGE": "{timestamp} ✏ {userMention(member)}: nickname changed from **{oldNick}** to **{newNick}**",
+  "MEMBER_USERNAME_CHANGE": "{timestamp} ✏ {userMention(user)}: username changed from **{oldName}** to **{newName}**",
+  "MEMBER_RESTORE": "{timestamp} 💿 Restored {restoredData} for {userMention(member)} on rejoin",
+  "MEMBER_TIMED_BAN": "{timestamp} 🔨 {userMention(user)} was tempbanned by {userMention(mod)} for {banTime}",
+  "MEMBER_TIMED_UNBAN": "{timestamp} 🔓 User (`{userId}`) was automatically unbanned by {userMention(mod)} after a tempban for {banTime}",
+
+  "CHANNEL_CREATE": "{timestamp} 🖊 Channel {channelMention(channel)} was created",
+  "CHANNEL_DELETE": "{timestamp} 🗑 Channel {channelMention(channel)} was deleted",
+  "CHANNEL_UPDATE": "{timestamp} ✏ Channel {channelMention(newChannel)} was edited. Changes:\n{differenceString}",
+
+  "THREAD_CREATE": "{timestamp} 🖊 Thread {channelMention(thread)} was created in channel <#{thread.parentId}>",
+  "THREAD_DELETE": "{timestamp} 🗑 Thread {channelMention(thread)} was deleted/archived from channel <#{thread.parentId}>",
+  "THREAD_UPDATE": "{timestamp} ✏ Thread {channelMention(newThread)} was edited. Changes:\n{differenceString}",
+
+  "ROLE_CREATE": "{timestamp} 🖊 Role **{role.name}** (`{role.id}`) was created",
+  "ROLE_DELETE": "{timestamp} 🖊 Role **{role.name}** (`{role.id}`) was deleted",
+  "ROLE_UPDATE": "{timestamp} 🖊 Role **{newRole.name}** (`{newRole.id}`) was edited. Changes:\n{differenceString}",
+
+  "MESSAGE_EDIT": "{timestamp} ✏ {userMention(user)} edited their message (`{after.id}`) in {channelMention(channel)}:\n**Before:**{messageSummary(before)}**After:**{messageSummary(after)}",
+  "MESSAGE_DELETE": "{timestamp} 🗑 Message (`{message.id}`) from {userMention(user)} deleted in {channelMention(channel)} (originally posted at **{messageDate}**):{messageSummary(message)}",
+  "MESSAGE_DELETE_BULK": "{timestamp} 🗑 **{count}** messages by {authorIds} deleted in {channelMention(channel)} ({archiveUrl})",
+  "MESSAGE_DELETE_BARE": "{timestamp} 🗑 Message (`{messageId}`) deleted in {channelMention(channel)} (no more info available)",
+  "MESSAGE_DELETE_AUTO": "{timestamp} 🗑 Auto-deleted message (`{message.id}`) from {userMention(user)} in {channelMention(channel)} (originally posted at **{messageDate}**):{messageSummary(message)}",
+
+  "VOICE_CHANNEL_JOIN": "{timestamp} 🎙 🔵 {userMention(member)} joined {channelMention(channel)}",
+  "VOICE_CHANNEL_MOVE": "{timestamp} 🎙 ↔ {userMention(member)} moved from {channelMention(oldChannel)} to {channelMention(newChannel)}",
+  "VOICE_CHANNEL_LEAVE": "{timestamp} 🎙 🔴 {userMention(member)} left {channelMention(channel)}",
+  "VOICE_CHANNEL_FORCE_MOVE": "{timestamp} \uD83C\uDF99 ✍ {userMention(member)} was moved from **{oldChannel.name}** to **{newChannel.name}** by {userMention(mod)}",
+  "VOICE_CHANNEL_FORCE_DISCONNECT": "{timestamp} \uD83C\uDF99 🚫 {userMention(member)} was forcefully disconnected from **{oldChannel.name}** by {userMention(mod)}",
+
+  "STAGE_INSTANCE_CREATE": "{timestamp} 📣 Stage Instance `{stageInstance.topic}` was created in Stage Channel <#{stageChannel.id}>",
+  "STAGE_INSTANCE_DELETE": "{timestamp} 📣 Stage Instance `{stageInstance.topic}` was deleted in Stage Channel <#{stageChannel.id}>",
+  "STAGE_INSTANCE_UPDATE": "{timestamp} 📣 Stage Instance `{newStageInstance.topic}` was edited in Stage Channel <#{stageChannel.id}>. Changes:\n{differenceString}",
+
+  "EMOJI_CREATE": "{timestamp} {emoji.mention} Emoji **{emoji.name}** (`{emoji.id}`) was created",
+  "EMOJI_DELETE": "{timestamp} 👋 Emoji **{emoji.name}** (`{emoji.id}`) was deleted",
+  "EMOJI_UPDATE": "{timestamp} {newEmoji.mention} Emoji **{newEmoji.name}** (`{newEmoji.id}`) was updated. Changes:\n{differenceString}",
+
+  "STICKER_CREATE": "{timestamp} 🖼️ Sticker `{sticker.name} ({sticker.id})` was created. Description: `{sticker.description}` Format: {emoji.format}",
+  "STICKER_DELETE": "{timestamp} 🖼️ Sticker `{sticker.name} ({sticker.id})` was deleted.",
+  "STICKER_UPDATE": "{timestamp} 🖼️ Sticker `{newSticker.name} ({sticker.id})` was updated. Changes:\n{differenceString}",
+
+  "COMMAND": "{timestamp} 🤖 {userMention(member)} used command in {channelMention(channel)}:\n`{command}`",
+
+  "MESSAGE_SPAM_DETECTED": "{timestamp} 🛑 {userMention(member)} spam detected in {channelMention(channel)}: {description} (more than {limit} in {interval}s)\n{archiveUrl}",
+  "OTHER_SPAM_DETECTED": "{timestamp} 🛑 {userMention(member)} spam detected: {description} (more than {limit} in {interval}s)",
+  "CENSOR": "{timestamp} 🛑 Censored message (`{message.id}`) from {userMention(user)} in {channelMention(channel)}: {reason}:\n```{messageText}```",
+  "CLEAN": "{timestamp} 🚿 {userMention(mod)} cleaned **{count}** message(s) in {channelMention(channel)}\n{archiveUrl}",
+
+  "CASE_CREATE": "{timestamp} ✏ {userMention(mod)} manually created new **{caseType}** case (#{caseNum})",
+  "CASE_DELETE": "{timestamp} ✂️ **Case #{case.case_number}** was deleted by {userMention(mod)}",
+
+  "MASSUNBAN": "{timestamp} ⚒ {userMention(mod)} mass-unbanned {count} users",
+  "MASSBAN": "{timestamp} ⚒ {userMention(mod)} massbanned {count} users",
+  "MASSMUTE": "{timestamp} 📢🚫 {userMention(mod)} massmuted {count} users",
+
+  "MEMBER_JOIN_WITH_PRIOR_RECORDS": "{timestamp} ⚠ {userMention(member)} joined with prior records. Recent cases:\n{recentCaseSummary}",
+
+  "CASE_UPDATE": "{timestamp} ✏ {userMention(mod)} updated case #{caseNumber} ({caseType}) with note:\n```{note}```",
+
+  "MEMBER_MUTE_REJOIN": "{timestamp} ⚠ Reapplied active mute for {userMention(member)} on rejoin",
+
+  "SCHEDULED_MESSAGE": "{timestamp} ⏰ {userMention(author)} scheduled a message to be posted to {channelMention(channel)} on {datetime}",
+  "SCHEDULED_REPEATED_MESSAGE": "{timestamp} ⏰ {userMention(author)} scheduled a message to be posted to {channelMention(channel)} on {datetime}, repeated {repeatDetails}",
+  "REPEATED_MESSAGE": "{timestamp} ⏰ {userMention(author)} scheduled a message to be posted to {channelMention(channel)} {repeatDetails}",
+  "POSTED_SCHEDULED_MESSAGE": "{timestamp} \uD83D\uDCE8 Posted scheduled message (`{messageId}`) to {channelMention(channel)} as scheduled by {userMention(author)}",
+
+  "BOT_ALERT": "{timestamp} ⚠ **BOT ALERT:** {tmplEval(body)}",
+  "DM_FAILED": "{timestamp} \uD83D\uDEA7 Failed to send DM ({source}) to {userMention(user)}",
+
+  "AUTOMOD_ACTION": "{timestamp} \uD83E\uDD16 Automod rule **{rule}** triggered by {userMention(users)}\n{matchSummary}\nActions taken: **{actionsTaken}**",
+  "SET_ANTIRAID_USER": "{timestamp} ⚔ {userMention(user)} set anti-raid to **{level}**",
+  "SET_ANTIRAID_AUTO": "{timestamp} ⚔ Anti-raid automatically set to **{level}**"
+}
